@@ -9,13 +9,14 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
-return [
-    '__pattern__' => [
-        'name' => '\w+',
-    ],
-    '[hello]'     => [
-        ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
-        ':name' => ['index/hello', ['method' => 'post']],
-    ],
+use think\Route;
 
-];
+// 测试
+Route::get('hello', 'sample/Test/hello');
+
+
+/**
+ *  Account
+ */
+Route::post('api/user/login', 'api/Account/login');
+Route::post('api/user/register', 'api/Account/register');
