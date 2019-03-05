@@ -16,7 +16,14 @@ Route::get('hello', 'sample/Test/hello');
 
 
 /**
- *  Account
+ *  Account模块
  */
 Route::post('api/user/login', 'api/Account/login');
 Route::post('api/user/register', 'api/Account/register');
+
+
+
+/**
+ *  Memo模块
+ */
+Route::post('api/memo/add', 'api/Memo/add');

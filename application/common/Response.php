@@ -20,7 +20,7 @@ class Response {
     public static function build($code, $msg, $data, $httpCode) {
 
         $result = [
-            'ErrorCode' => $code,
+            'code' => $code,
             'msg' => $msg,
             'data' => $data
         ];

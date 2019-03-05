@@ -28,12 +28,6 @@ class UserService extends BaseService {
 
     /**
      * 用户账号注册
-     * @param $account
-     * @param $password
-     * @throws \think\db\exception\DataNotFoundException
-     * @throws \think\db\exception\ModelNotFoundException
-     * @throws \think\exception\DbException
-     * @throws UserExistException
      */
     public function register($account, $password) {
 
@@ -58,14 +52,6 @@ class UserService extends BaseService {
 
     /**
      * 用户账号登录
-     * @param $account
-     * @param $password
-     * @return array
-     * @throws \think\db\exception\DataNotFoundException
-     * @throws \think\db\exception\ModelNotFoundException
-     * @throws \think\exception\DbException
-     * @throws AccountOrPasswordException
-     * @throws UserNotExistException
      */
     public function login($account, $password) {
 

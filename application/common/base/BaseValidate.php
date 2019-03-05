@@ -41,10 +41,10 @@ class BaseValidate extends Validate {
     }
 
 
-    protected function isNotEmpty($value){
-        if (empty($value)){
+    protected function isNotEmpty($value) {
+        if (empty(trim($value))) {
             return false;
-        }else {
+        } else {
             return true;
         }
     }
