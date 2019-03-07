@@ -27,3 +27,4 @@ Route::post('api/user/register', 'api/Account/register');
  *  Memo模块
  */
 Route::post('api/memo/add', 'api/Memo/add');
+Route::get('api/memo/list/:page', 'api/Memo/getList');

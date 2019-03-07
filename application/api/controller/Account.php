@@ -41,6 +41,7 @@ class Account {
      * @apiDescription 用户注册
      * @apiParam {String}   account         账号
      * @apiParam {String}   password        密码
+     * @apiUse commonRsp
      * @apiSuccessExample {json} 返回样例：
      * {"code":1,"msg":"注册成功","data":null}
      */
@@ -62,6 +63,7 @@ class Account {
      * @apiDescription 用户登录
      * @apiParam {String}   account         账号
      * @apiParam {String}   password        密码
+     * @apiUse commonRsp
      * @apiSuccessExample {json} 返回样例：
      * {"code":1,"msg":"登录成功","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJIeVpoYW4iLCJpYXQiOjE1NTE3NzkwMzMsImV4cCI6MTU1MTg2NTQzMywidWlkIjoxM30.ia6dV4jzD2NKHhKW11W9KhYJsYommFuyOb7XOzLnz_s"}}
      */
